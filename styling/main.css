@@ -1,0 +1,96 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #47C8FA;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+header a {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+header a:hover, header a:focus {
+  -webkit-transform: translateX(-50%) scale(1.1);
+          transform: translateX(-50%) scale(1.1);
+}
+
+#infoPage {
+  display: inline-block;
+  background-color: whitesmoke;
+  padding: 10%;
+  margin: 10% 15% 10% 15%;
+}
+
+#fish-gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+#fish-gallery .FishImage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+
+#fish-gallery .FishImage a {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#fish-gallery .FishImage a:hover, #fish-gallery .FishImage a:focus {
+  -webkit-transform: translateX(-50%) scale(1.1);
+          transform: translateX(-50%) scale(1.1);
+}
+
+#fish-gallery .FishImage img {
+  width: 100%;
+}
+
+#fish-gallery p {
+  color: lavenderblush;
+}
+
+p {
+  font-size: 10px;
+}
+
+#FishingWebsiteName {
+  font-size: 40px;
+  text-align: center;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media all and (min-width: 700px) {
+  p {
+    font-size: 20px;
+  }
+  #FishingWebsiteName {
+    font-size: 50px;
+  }
+}
