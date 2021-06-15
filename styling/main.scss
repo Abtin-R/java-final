@@ -5,7 +5,7 @@
 }
 
 // Default styling (what mobile looks like)
-body{
+body {
     background-color: $website-bg-color;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
@@ -17,9 +17,10 @@ header {
         left: 50%;
         transform: translateX(-50%);
 
-        &:hover, &:focus{
+        &:hover,
+        &:focus {
             transform: translateX(-50%) scale(1.1);
-        } 
+        }
     }
 }
 
@@ -28,12 +29,11 @@ header {
     background-color: whitesmoke;
     padding: 10%;
     margin: 10% 15% 10% 15%;
- 
 }
 #fish-gallery {
     display: grid;
 
-    grid-template-rows: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(3, 1fr);
 
     .FishImage {
@@ -42,63 +42,48 @@ header {
         align-items: center;
         padding: 20px;
 
-        a{
+        a {
             display: inline-block;
             position: relative;
             left: 50%;
             transform: translateX(-50%);
-    
-            &:hover, &:focus{
+
+            &:hover,
+            &:focus {
                 transform: translateX(-50%) scale(1.1);
-            } 
+            }
         }
-        
-    
+
         img {
             width: 100%;
-    
         }
-    
     }
 
     p {
-        
         color: lavenderblush;
-
     }
 }
 
-p{
+p {
     font-size: 10px;
 }
 
 #FishingWebsiteName {
-
     font-size: 40px;
-    text-align: center; 
+    text-align: center;
     color: white;
-
 }
 a {
-
     text-decoration: none;
 }
 
-
-
-
 // Styling for desktop version
-@media all and (min-width: 700px){
-    p{
+@media all and (min-width: 700px) {
+    p {
         font-size: 20px;
     }
 
     #FishingWebsiteName {
-
         font-size: 50px;
-        
-    
     }
-  
-
 }
