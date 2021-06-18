@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html>
 
+
+<!--head this has the website title linking the stylesheet and the meta charset and meta name-->
 <head>
    <link rel="stylesheet" href="styling/main.css">
+   <title>Fishing Guide</title>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
 </head>
 
 <body>
 
+
+
+    <!-- header tag inside i have the home button that takes you to the homepage when 
+      clicked. a secret button that you can click and pops up a alert -->
    <header>
 
       <a href="index.html">
@@ -18,6 +27,7 @@
 
    </header>
 
+   <!-- the gallery each fish you click on will take you to that website.-->
    <div id="fish-gallery">
       <div class="FishImage">
          <a href="walleye.html"> <img src="images/walleye.jpg" alt="" width="50%"> </a>
@@ -36,16 +46,18 @@
          <p>Northern Pike</p>
       </div>
       <div class="FishImage">
-         <a href="walleye.html"> <img src="images/drum.jpg" alt="" width="50%"> </a>
+         <a href="FreshWaterDrum.html"> <img src="images/drum.jpg" alt="" width="50%"> </a>
          <p>Fresh Water Drum</p>
       </div>
       <div class="FishImage">
-         <a href="walleye.html"> <img src="images/goldenmoon.jpg.png" alt="" width="50%"> </a>
+         <a href="GME.html"> <img src="images/goldenmoon.jpg.png" alt="" width="50%"> </a>
          <p>Goldeye and Mooneye</p>
       </div>
    </div>
 
 
+
+   <!-- alert scrpit -->
    <script>
       function clicked() {
          alert("Congratulations you have found the sercret button");

@@ -10,6 +10,7 @@ body {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
+//how the headers look styles the a tags to becom bigger when hovering over them changes it to inlineblock
 header {
     a {
         display: inline-block;
@@ -24,12 +25,15 @@ header {
     }
 }
 
+//on the pages with info about fish default sizing for the div
 #infoPage {
     display: inline-block;
     background-color: whitesmoke;
     padding: 10%;
     margin: 10% 15% 10% 15%;
 }
+
+//creates a gallery for the home pag and when hovering over the images it becomes bigger.
 #fish-gallery {
     display: grid;
 
@@ -63,11 +67,13 @@ header {
         color: lavenderblush;
     }
 }
+//mobile font size
 
 p {
     font-size: 10px;
 }
 
+//home button styling
 #FishingWebsiteName {
     font-size: 40px;
     text-align: center;
